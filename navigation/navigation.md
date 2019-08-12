@@ -1,6 +1,8 @@
 # test
 
-[トップ](index/index.md)
+[Home](index.md)
+[Test](test.md)
+[Test](test.md)
 
 
 [gimmick:themechooser](Choose theme)
