@@ -11,7 +11,7 @@
     <title>MDwiki</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="fragment" content="!">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="link/favicon.ico" />
     <meta charset="UTF-8">
     <style type="text/css">
     /* hide the main content while we assemble everything */
@@ -86,6 +86,27 @@
         font-size: smaller;
         padding: 1em;
     }
+    
+    /* 追加部分 */
+    
+	.message {
+		position: relative;
+	}
+	.message span.remark {
+		display: none;
+	}
+	.message a:hover span.remark {
+		background: none repeat scroll 0 0 #FFFFFF;
+		border: 1px solid #CCCCCC;
+		color: #000000;
+		display: block;
+		line-height: 1.2em;
+		margin: 0.5em;
+		padding: 0.5em;
+		position: absolute;
+		top: 15px;
+		width: 30em;
+	}
     </style>
 
 <!-- START extlib/css/highlight.github.css -->
@@ -196,6 +217,18 @@ var hljs=new function(){function l(o){return o.replace(/&/gm,"&amp;").replace(/<
 <!-- END extlib/js/jquery.colorbox.min.js -->
 <!-- START dist/MDwiki.js -->
 <script type="text/javascript">;(function() {
+
+/* IE対策(http://stakiran.hatenablog.com/entry/2018/10/24/195159) */
+$.ajaxSetup({
+  xhr: function() {
+    try {
+      return new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (e) {
+      return new XMLHttpRequest();
+    }
+  }
+});
+
 
 /**
  * Block-Level Grammar
@@ -1747,7 +1780,7 @@ if (typeof exports === 'object') {
     var navMD = '';
     $.md.NavigationDfd = $.Deferred();
     var ajaxReq = {
-        url: 'navigation.md',
+        url: 'index/navigation/navigation.md',
         dataType: 'text'
     };
     $.ajax(ajaxReq).done(function(data) {
@@ -1780,7 +1813,7 @@ if (typeof exports === 'object') {
             // TODO why are <script> tags from navHtml APPENDED to the jqcol?
             var $h = $('<div>' + navHtml + '</div>');
 
-            // insert <scripts> from navigation.md into the DOM
+            // insert <scripts> from index/navigation/navigation.md into the DOM
             $h.each(function (i,e) {
                 if (e.tagName === 'SCRIPT') {
                     $('script').first().before(e);
@@ -1813,17 +1846,17 @@ if (typeof exports === 'object') {
     }
 
     $.md.ConfigDfd = $.Deferred();
-    $.ajax({url: 'config.json', dataType: 'text'}).done(function(data) {
+    $.ajax({url: 'config/config.json', dataType: 'text'}).done(function(data) {
         try {
             var data_json = JSON.parse(data);
             $.md.config = $.extend($.md.config, data_json);
-            log.info('Found a valid config.json file, using configuration');
+            log.info('Found a valid config/config.json file, using configuration');
         } catch(err) {
-            log.error('config.json was not JSON parsable: ' + err);
+            log.error('config/config.json was not JSON parsable: ' + err);
         }
         $.md.ConfigDfd.resolve();
     }).fail(function(err, textStatus) {
-        log.error('unable to retrieve config.json: ' + textStatus);
+        log.error('unable to retrieve config/config.json: ' + textStatus);
         $.md.ConfigDfd.reject();
     });
     function registerFetchConfig() {
@@ -1831,12 +1864,12 @@ if (typeof exports === 'object') {
         $.md.stage('init').subscribe(function(done) {
             // TODO 404 won't get cached, requesting it every reload is not good
             // maybe use cookies? or disable re-loading of the page
-            //$.ajax('config.json').done(function(data){
+            //$.ajax('config/config.json').done(function(data){
             $.md.ConfigDfd.done(function(){
                 done();
             }).fail(function() {
                 var log = $.md.getLogger();
-                log.info('No config.json found, using default settings');
+                log.info('No config/config.json found, using default settings');
                 done();
             });
         });
@@ -1971,12 +2004,12 @@ if (typeof exports === 'object') {
             currentHashString === '#'||
             currentHashString === '#!')
         {
-            newHashString = '#!index.md';
+            newHashString = '#!index/index.md';
         }
         else if (currentHashString.startsWith ('#!') &&
                  currentHashString.endsWith('/')
                 ) {
-            newHashString = currentHashString + 'index.md';
+            newHashString = currentHashString + 'index/index.md';
         }
         if (newHashString)
             window.location.hash = newHashString;
@@ -3067,9 +3100,9 @@ if (typeof exports === 'object') {
             return;
         }
 		var filename = window.location.hash;
-
+		//document.write(filename);
 		if (filename.length === 0) {
-            filename = '#!index.md';
+            filename = '#!index/index.md';
         }
 		var selector = 'li:has(a[href="' + filename + '"])';
 		$('#md-menu').find (selector).addClass ('active');
@@ -3181,14 +3214,15 @@ if (typeof exports === 'object') {
     // note: the footer is part of the GPLv3 legal information
     // and may not be removed or hidden to comply with licensing conditions.
     function addFooter() {
+    //フッター部、とりあえず消しとく
         var navbar = '';
-        navbar += '<hr><div class="scontainer">';
-        navbar +=   '<div class="pull-right md-copyright-footer"> ';
-        navbar +=     '<span id="md-footer-additional"></span>';
-        navbar +=     'Website generated with <a href="http://www.mdwiki.info">MDwiki</a> ';
-        navbar +=     '&copy; Timo D&ouml;rr and contributors. ';
-        navbar +=   '</div>';
-        navbar += '</div>';
+        //navbar += '<hr><div class="scontainer">';
+        //navbar +=   '<div class="pull-right md-copyright-footer"> ';
+        //navbar +=     '<span id="md-footer-additional"></span>';
+        //navbar +=     'Website generated with <a href="http://www.mdwiki.info">MDwiki</a> ';
+        //navbar +=     '&copy; Timo D&ouml;rr and contributors. ';
+        //navbar +=   '</div>';
+        //navbar += '</div>';
         var $navbar = $(navbar);
         $navbar.css('position', 'relative');
         $navbar.css('margin-top', '1em');
@@ -3258,9 +3292,10 @@ if (typeof exports === 'object') {
 
     // picks out the paragraphs that start with a trigger word
     function select_paragraphs() {
-        var note = ['note', 'beachte' ];
-        var warning = [ 'achtung', 'attention', 'warnung', 'warning', 'atención', 'guarda', 'advertimiento' ];
-        var hint = ['hint', 'tipp', 'tip', 'hinweis'];
+    	//ここに文言追加
+        var note = ['note', 'beachte', 'ノート'];
+        var warning = [ 'achtung', 'attention', 'warnung', 'warning', 'atención', 'guarda', 'advertimiento', '注意'];
+        var hint = ['hint', 'tipp', 'tip', 'hinweis', 'ヒント'];
         var exp = note.concat(warning);
         exp = exp.concat(hint);
         var matches = [];
@@ -4242,6 +4277,17 @@ function googlemapsReady() {
         }
     };
     $.md.registerGimmick(yumlGimmick);
+
+    // 追加（タイトルをh1にする）
+    var gimmick_title_setter = {
+        name: 'titlesetter',
+        version: $.md.version,
+        once: function() {
+            var titletext = $('h1:last').text();
+            document.title = titletext;
+        }
+    };
+    $.md.registerGimmick(gimmick_title_setter);
 
 }(jQuery));
 </script>
