@@ -5,4 +5,4 @@
 [Test](test.md)
 
 
-[gimmick:Disqus](gorozobase)
+<!-- [gimmick:Disqus](gorozobase) -->
