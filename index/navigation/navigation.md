@@ -5,4 +5,4 @@
 [Test](test.md)
 
 
-[gimmick:themechooser](Choose theme)
+[gimmick:Disqus](gorozobase)
