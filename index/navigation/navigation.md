@@ -1,6 +1,6 @@
 # gorozo Base
 
-[Home](index.md)
+[Hello](navigationsPage/Hello/Hello.md)
 [Test](test.md)
 [Test](test.md)
 
