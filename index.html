@@ -4295,12 +4295,19 @@ function googlemapsReady() {
 <script type="text/javascript">$.md.logThreshold = $.md.loglevel.DEBUG;</script>
 </head>
 <body>
-    <noscript>
-        This website requires Javascript to be enabled. Please turn on Javascript
-        and reload the page.
-    </noscript>
-
-    <div id="md-all">
-    </div>
+    <div id="md-all"></div>
+    
+    <div id="disqus_thread"></div>
+    <script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://gorozobase.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                
+    <script id="dsq-count-scr" src="//gorozobase.disqus.com/count.js" async></script>
 </body>
 </html>
