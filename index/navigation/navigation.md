@@ -1,6 +1,6 @@
 # gorozo Base
 
-[Hello](navigationsPage/Hello/Hello.md)
+[Hello](index/navigationsPage/Hello/Hello.md)
 [Test](test.md)
 [Test](test.md)
 
