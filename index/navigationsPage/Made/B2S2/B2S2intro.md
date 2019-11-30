@@ -8,7 +8,7 @@ B2S2（BEYBLADE SCORE SYSTEM）
 旧名：BBSS
 
 ### BBGC edi
-![](img/bbssTw1.png/g/519/874)
+![](img/bbssTw1.png/519/874)
 2018/11/25 に開催されたBBGCに向けて開発したシステム
 
 iPhoneのカメラで取得した映像をPCに転送し、  
