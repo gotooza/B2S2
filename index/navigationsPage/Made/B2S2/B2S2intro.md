@@ -9,7 +9,7 @@ B2S2（BEYBLADE SCORE SYSTEM）
 
 
 ## BBGC edi
-<img src="img/bbssTw1.png" alt="BBGC edi" width="290" height="150">
+<img src="img/bbssTw1.png" title="BBGC edi" width="290" height="150">
 
 2018/11/25 に開催されたBBGCに向けて開発したシステム
 
@@ -24,7 +24,7 @@ iPhoneのカメラで取得した映像をPCに転送し、
 
 
 ## js edi
-<img src="img/bbssTw2.png" alt="js edi" width="290" height="150">
+<img src="img/bbssTw2.png" title="js edi" width="290" height="150">
 
 一言で表すと、全画面対応版  
 Javaで書いていたものをJavaScriptで書き直した
@@ -40,7 +40,7 @@ PCへの負担が極端に減った
 
 
 ## iPhoneApp edi ver.α
-<img src="img/bbssTw3.png" alt="iPhoneApp edi ver.α" width="290" height="150">
+<img src="img/bbssTw3.png" title="iPhoneApp edi ver.α" width="290" height="150">
 
 ついに作ってしまった  
 これまで利用していたカメラ機能をそのまま流用した  
@@ -58,8 +58,16 @@ LINEでチームへ共有などが可能である
 
 
 ## iPhoneApp edi ver.β
-執筆準備中
+<img src="img/bbssTw4.png" title="iPhoneApp edi ver.β" width="290" height="150">
 
+α版作成の際に作る作ると言っていた  
+「○○Finish」をつけたver  
+現在の一応現役版
+
+そして、この度 `TwitCasing Game` との連携に成功  
+連携と言っても画面の転送ができただけである  
+とは言ってもこの画面を展開できるのはデカイ  
+あとあと録画として動画が残るのもデカイ
 
 ## androidApp edi
 現在開発中！
