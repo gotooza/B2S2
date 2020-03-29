@@ -2,8 +2,7 @@
 
 [Hello](index/navigationsPage/Hello/Hello.md)
 [Made](index/navigationsPage/Made/Made.md)
-[Test](test.md)
-[Test](test.md)
+[Please](index/navigationsPage/Made/Please.md)
 [Support](index/navigationsPage/Support/Support.md)
 
 [gimmick:themechooser](Theme)

@@ -5,7 +5,8 @@ B2S2（BEYBLADE SCORE SYSTEM）
 ベイブレードバーストのスコア支援システムです  
 現時点でPC版とiOS版を展開しています（2019年11月時点）
 
-旧名：BBSS
+旧名：BBSS  
+→ [マニュアル](manual/B2S2manual.md)（準備中です）
 
 
 ## BBGC edi
@@ -21,6 +22,7 @@ iPhoneのカメラで取得した映像をPCに転送し、
 `YouTubeLive` などで生放送もすることが可能である
 
 モデルは『ベイブレードバースト世界大会2018』
+→ [もっと詳しく](more/BBGCedi/BBGCedi.md)
 
 
 ## js edi
@@ -37,6 +39,7 @@ PCへの負担が極端に減った
 ロジックは前作とほぼ同じ
 
 モデルは『ベイブレードバーストG1大会』
+→ [もっと詳しく](more/BBGCedi/JSedi.md)
 
 
 ## iPhoneApp edi ver.α
