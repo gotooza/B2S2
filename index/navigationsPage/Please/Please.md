@@ -4,7 +4,8 @@
 
 ## Amazonギフト券で
 15円〜手数料無料で行えます。。。  
-`www.amazon.co.jp/dp/B004N3APGO` （仮）
+[リンク](www.amazon.co.jp/dp/B004N3APGO)
+
 
 ## 各種機材で
 研究に必要な機材です。  

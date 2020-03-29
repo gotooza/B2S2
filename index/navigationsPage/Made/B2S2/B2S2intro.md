@@ -39,7 +39,7 @@ PCへの負担が極端に減った
 ロジックは前作とほぼ同じ
 
 モデルは『ベイブレードバーストG1大会』
-→ [もっと詳しく](more/BBGCedi/JSedi.md)
+→ [もっと詳しく](more/JSedi/JSedi.md)
 
 
 ## iPhoneApp edi ver.α
