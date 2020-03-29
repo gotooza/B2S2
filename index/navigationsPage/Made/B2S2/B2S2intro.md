@@ -23,6 +23,7 @@ iPhoneのカメラで取得した映像をPCに転送し、
 
 モデルは『ベイブレードバースト世界大会2018』
 → [もっと詳しく](more/BBGCedi/BBGCedi.md)
+→ [裏話](more/BBGCedi/BBGCedi_Inside.md)
 
 
 ## js edi
