@@ -10,7 +10,8 @@ iPhoneのカメラで取得した映像をPCに転送し、
 `QuickTime` などのソフトで録画したり、 `YouTubeLive` などでも生放送ができる
 
 ## 構成図
-<img src="img/20181125_20190714_BBGCandBeyfes.png" width="290" height="150" title="">
+BBGC、Beyfes  
+<img src="img/20181125_20190714_BBGCandBeyfes.png" width="290" height="150" title="BBGCandBeyfes">
 
 
 ## 開発環境
