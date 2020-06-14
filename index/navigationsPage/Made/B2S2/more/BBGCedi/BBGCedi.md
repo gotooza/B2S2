@@ -29,6 +29,7 @@ iPhoneのカメラで取得した映像をPCに転送し、
 * 出力
     + QuickTime Player
 
+
 ## BBGC当日構成
 ### ハードウェア、ソフトウェア
 
@@ -44,6 +45,7 @@ iPhoneのカメラで取得した映像をPCに転送し、
     + CamTwist
 * 出力
     + QuickTime Player
+
 
 ### グッズ
 
@@ -63,3 +65,7 @@ iPhoneのカメラで取得した映像をPCに転送し、
 
 ## デモ
 `準備中`
+
+
+## 裏話
+→ [見に行く](inside/BBGCedi_inside.md)
