@@ -9,7 +9,7 @@ Processingでの画面設計、iPhoneからの映像取得ならびに処理、�
 こんなんじゃ何分間も続くようじゃPCが持たねえ  
 
 参考画像  
-<img src="img/cpu.png" title="over100">
+<img src="img/cpu.png"  width="144" height="112" title="over100">
 
 ## テスト環境作成に約1万円するソフト買いました
 はい、マジで買いました  

@@ -11,7 +11,7 @@ iPhoneのカメラで取得した映像をPCに転送し、
 
 ## 構成図
 BBGC、Beyfes  
-<img src="img/20181125_20190714_BBGCandBeyfes.png" width="290" height="150" title="BBGCandBeyfes">
+<img src="img/20181125_20190714_BBGCandBeyfes.png"  width="550" height="330" title="BBGCandBeyfes">
 
 
 ## 開発環境

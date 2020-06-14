@@ -10,10 +10,10 @@
 
 ## 構成図
 KMMKKK新橋 初期原案  
-<img src="img/20200111_KMMKKK＿plan.png" title="KMMKKK新橋初期">  
+<img src="img/20200111_KMMKKK＿plan.png" width="550" height="370" title="KMMKKK新橋初期">
 
 KMMKKK新橋 完全版  
-<img src="img/20200111_KMMKKK.png" title="KMMKKK新橋">
+<img src="img/20200111_KMMKKK.png" width="550" height="370" title="KMMKKK新橋">
 
 
 ## 開発環境
