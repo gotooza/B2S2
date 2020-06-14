@@ -71,6 +71,8 @@ LINEでチームへ共有などが可能である
 連携と言っても画面の転送ができただけである  
 とは言ってもこの画面を展開できるのはデカイ  
 あとあと録画として動画が残るのもデカイ
+→ [もっと詳しく](more/iPhoneAPPediVerβ/iPhoneAPPediVerβ.md)
+
 
 ## androidApp edi
 現在開発中！
