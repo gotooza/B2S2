@@ -9,10 +9,11 @@
 しかし、プロジェクタなどに接続する場合はPCをかます必要がある
 
 ## 構成図
-KMMKKK新橋 初期原案  
+### KMMKKK新橋 初期原案
 <img src="img/20200111_KMMKKK＿plan.png" width="550" height="370" title="KMMKKK新橋初期">
 
-KMMKKK新橋 完全版  
+
+### KMMKKK新橋 完全版
 <img src="img/20200111_KMMKKK.png" width="550" height="370" title="KMMKKK新橋">
 
 
